@@ -2,9 +2,10 @@
 
 > Single-file HTML chatbot UI — drop into any static host, no build step required.
 
-A self-contained, browser-only chatbot client inspired by the ChatGPT interface. The whole experience (HTML, CSS, JavaScript, UI logic) lives in one `Chatbot` file at the repo root, so it can be served from anywhere a static file is reachable.
+A self-contained, browser-only chatbot client inspired by the ChatGPT interface. The whole experience (HTML, CSS, JavaScript, UI logic) lives in one `Chatbot` file at the repo root (~44 KB), so it can be served from anywhere a static file is reachable.
 
 🔗 **Live repo:** <https://github.com/girishlade111/girishlade>
+🔗 **Live demo:** <https://girishlade111.github.io/girishlade/>
 
 ## ✨ Features
 
@@ -61,3 +62,19 @@ Bug reports and pull requests are welcome. Because the whole UI lives in one HTM
 ## 📜 License
 
 GNU General Public License v3.0 — see [`LICENSE`](./LICENSE).
+
+## 🌐 Deployment
+
+Fully static — no build, no server, no API keys:
+
+- **GitHub Pages** (live): `https://girishlade111.github.io/girishlade/` — deployed from the `gh-pages` branch, where the `Chatbot` file is published as `index.html`
+- **Any static host**: copy the `Chatbot` file, rename it to `index.html`, upload to Netlify / Cloudflare Pages / S3 / any web server
+- **Vercel/Cloudflare**: works as-is from any static export
+
+## 🔧 Environment variables
+
+None — the chatbot runs 100% in the browser with zero runtime configuration. No `.env` needed.
+
+---
+
+Built by Girish Lade · https://ladestack.in
